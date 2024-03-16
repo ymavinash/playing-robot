@@ -1,0 +1,280 @@
+
+body{
+background: url(./bg2.jpg);
+background-size: cover;
+
+
+}
+.content{
+    margin-top:6%; 
+}
+.robo-fam{
+    border: 3px solid black;
+    height: 420px;
+    margin-top: 20px;
+    background: url(./bg.avif);
+    background-size: full;
+    display: flex;
+    justify-content: space-evenly;
+}
+.antena{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+   
+    
+}
+#left,#right{
+    height: 60px;
+    width: 15px;
+   background:chartreuse;
+   border-radius: 10px 10px 0 0;
+}
+.face{
+    background: chartreuse;
+    height: 100px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+
+}
+
+.eyes{
+display: flex;
+justify-content: space-evenly;
+padding-top: 40px;
+}
+.leye,.reye{
+    background: linear-gradient(black,black);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+}
+.bodyyy{
+    display: flex;
+    height: 100px;
+    width: 250px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+    }
+.larm{
+    height: 90px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
+.cen{
+    width: 150px;
+    height: 150px;
+    background: chartreuse;
+    border-radius: 0 0 40% 40%;
+
+}
+.rarm{
+    height: 90px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.legs{
+display: flex;
+width: 200px;
+margin: auto;
+}
+img{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+}
+.fb{
+    margin-left: 100px;
+}
+.lleg,.rleg{
+    height: 90px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin: auto;
+}
+.robo-fam:hover .signall{
+    transform:scale(1.2);
+    animation: facedance 1s 0.1s infinite;
+}
+  
+.robo-fam:hover .face{
+    animation: rotate 1s 0.1s infinite;
+    border-radius: 50%;
+}
+
+
+.robo-fam:hover #left{
+    animation: leftantina 1s 0.1s infinite;
+}
+.robo-fam:hover #right{
+    animation: rightantina 1s 0.1s infinite;
+}
+@keyframes leftantina{
+    0%{
+        transform: rotate(-45deg);
+        transform-origin: bottom center;
+
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+   
+    100%{
+        transform: rotate(-45deg);
+    transform-origin: bottom center;
+        
+    }
+}   
+@keyframes rightantina{
+    0%{
+        transform: rotate(45deg);
+        transform-origin: bottom center;
+
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+   
+    100%{
+        transform: rotate(45deg);
+    transform-origin: bottom center;
+        
+    }
+}   
+@keyframes facedance{
+  
+    0%{
+        transform: translate(15px,15px);
+
+    }
+    25%{
+        transform: translateX(0px);
+    }
+50%{
+    transform: translate(-15px,15px);
+    }
+   75%{
+    transform: translateX(0px);
+   }
+    100%{
+        transform: translate(20px,20px);
+        
+    }
+}   
+.robo-fam:hover .cen{
+    animation: dance 1s 0.1s infinite;
+    border-radius: 50px;
+}
+@keyframes dance{
+  
+    0%{
+        transform: translate(15px,15px);
+
+    }
+    25%{
+        transform: translateX(0px);
+    }
+50%{
+    transform: translate(-15px,15px);
+    }
+   75%{
+    transform: translateX(0px);
+   }
+    100%{
+        transform: translate(20px,20px);
+        
+    }
+}
+.robo-fam:hover .larm{
+    animation: movehands 1s 0.1s infinite;
+}
+.robo-fam:hover .rarm{
+    animation: movehands 1s 0.1s infinite;
+}
+
+@keyframes movehands{
+    0%{
+        transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    25%{
+        transform: rotate(45deg);
+    transform-origin: top center;
+    }
+    50%{
+        transform: rotate(0deg);
+    transform-origin: top center;
+    }
+    100%{
+        transform: rotate(-45deg);
+    transform-origin: top center;
+    }
+    
+
+}
+.robo-fam:hover .lleg{
+    
+animation:movehands 1s 0.1s infinite;
+}
+.robo-fam:hover .fb{
+    animation: kick 1s 0.9s infinite;
+}
+@keyframes kick{
+    0%{
+transform: translate(0px,0px);
+    }
+    10%{
+        transform: translate(35px,-35px);
+    }
+    20%{
+        transform: translate(55px,-55px);
+    }
+    30%{
+        transform: translate(75px,-75px);
+    }
+    40%{
+        transform: translate(115px,-115px);
+    }
+    50%{
+        transform: translate(140px,-140px);
+    }
+    60%{
+        transform: translate(165px,-115px);
+    }
+    70%{
+        transform: translate(195px,-75px);
+    }
+    80%{
+        transform: translate(225px,-55px);
+    }
+    90%{
+        transform: translate(250px,-35px);
+    }
+    100%{
+        transform: translate(300px,0px);
+    }
+}
